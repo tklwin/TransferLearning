@@ -3,6 +3,7 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 import os
+# Test
 
 # Set class names
 CLASS_NAMES = ['angular_leaf_spot', 'bean_rust', 'healthy']
