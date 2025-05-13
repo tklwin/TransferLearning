@@ -3,7 +3,6 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 import os
-# Test
 
 # Set class names
 CLASS_NAMES = ['angular_leaf_spot', 'bean_rust', 'healthy']
@@ -11,7 +10,7 @@ CLASS_NAMES = ['angular_leaf_spot', 'bean_rust', 'healthy']
 # Load model from selected option
 @st.cache_resource
 def load_model(model_name):
-    model_path = os.path.join("SavedModels", f"{model_name}.h5")
+    model_path = os.path.join("SavedModels", f"{model_name}.keras")  # Uses .keras extension
     return tf.keras.models.load_model(model_path)
 
 # Preprocess uploaded image
